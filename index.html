@@ -5,7 +5,25 @@
   </head>
   <body>
     <p>
-      WHEEEEEE
+      WHEEEEEE! Imma ask you a question.
     </p>
+    <script type="text/javascript">
+      var userName = prompt('What is your name?');
+      console.log('the user\'s name is ' + userName);
+
+      alert('Hello, ' + userName + '. Imma axe you a question.');
+
+      var answerOne = prompt('Hey, ' + userName + '. Is Single Ladies the best music video of all time? Answer with Y or N.').toUpperCase();
+      console.log('the user\'s answer to question one was ' + answerOne + '.');
+      if (answerOne === 'Y') {
+        alert('OF ALL TIME');
+      }
+      else if (answerOne === 'N') {
+        alert('imma let you finish, but...');
+      }
+      else {
+        alert('That\'s not a yes or no, ' + userName + '.');
+      };
+    </script>
   </body>
 </html>
